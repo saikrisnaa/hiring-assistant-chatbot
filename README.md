@@ -29,4 +29,4 @@ A privacy-focused, intelligent chatbot web application that automates initial ca
 ## Running the application
 
 - Start the chatbot app using command - streamlit run main.py
-- access in your browser at localhost
+- Access in your browser at localhost
