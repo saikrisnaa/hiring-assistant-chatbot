@@ -1,10 +1,8 @@
-# config.py
-
 import openai
 import os
 from dotenv import load_dotenv
 
-# Load Groq API Key from .env 
+# Load API Key from .env 
 load_dotenv()
 openai.api_key = os.getenv("GROQ_API_KEY")
 openai.api_base = "https://api.groq.com/openai/v1"
