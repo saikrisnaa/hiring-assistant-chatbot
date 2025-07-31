@@ -1,5 +1,3 @@
-# sentiment.py
-
 from textblob import TextBlob
 
 def analyze_sentiment(text):
