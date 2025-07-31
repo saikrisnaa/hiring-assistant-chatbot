@@ -6,7 +6,7 @@ def get_gathering_system_prompt():
       2. Email Address
       3. Phone Number
       4. Years of Experience
-      5. Desired Position(s)
+      5. Desired Position
       6. Current Location
       7. Tech Stack
     After asking for the Tech Stack, you MUST tell the user:
