@@ -1,5 +1,3 @@
-# prompts.py
-
 def get_gathering_system_prompt():
     return """
     You are a friendly AI Hiring Assistant. Your goal is to collect candidate information.
