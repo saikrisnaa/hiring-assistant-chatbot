@@ -36,7 +36,7 @@ def extract_json(text):
 def end_conversation():
     mood_str = ""
     if "sentiment_trend" in st.session_state:
-        mood_str = f"\n\nThroughout the interview, you {get_user_mood(st.session_state['sentiment_trend'])}."
+        mood_str = f"\n\nThroughout the screening, you {get_user_mood(st.session_state['sentiment_trend'])}."
     st.session_state.chat_history.append({
         "role": "assistant",
         "content": (
