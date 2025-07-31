@@ -20,7 +20,7 @@ with st.sidebar:
     )
     st.title("TalentScout AI")
     st.markdown(
-        "🚀 **AI Interview Assistant**\n\n"
+        "**AI Interview Assistant**\n\n"
         "Your data is anonymized for your privacy.\n"
     )
     st.info(
