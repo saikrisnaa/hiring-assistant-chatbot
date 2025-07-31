@@ -1,5 +1,3 @@
-# helpers.py
-
 import streamlit as st
 import openai
 import re
@@ -42,9 +40,9 @@ def end_conversation():
     st.session_state.chat_history.append({
         "role": "assistant",
         "content": (
-            f"Thank you for completing the interview! 🎉{mood_str}\n\n"
+            f"Thank you for completing the Technical Screening! 🎉{mood_str}\n\n"
             "We appreciate your time and responses. Our team will review your answers and contact you with the next steps soon.\n\n"
-            "Have a wonderful day! 👋"
+            "Have a wonderful day!"
         )
     })
     st.session_state.interview_finished = True
