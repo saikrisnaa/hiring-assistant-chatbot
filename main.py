@@ -6,8 +6,8 @@ from utils import call_llm, extract_questions, is_exit_command, extract_json, en
 from sentiment import analyze_sentiment, get_empathy_prefix
 
 # UI and Privacy - blocks before main logic
-st.set_page_config(page_title="TalentScout AI", page_icon="🤖", layout="wide", initial_sidebar_state="expanded")
-st.title("🤖 TalentScout - AI Hiring Assistant")
+st.set_page_config(page_title="TalentScout", page_icon="🤖", layout="wide", initial_sidebar_state="expanded")
+st.title("🤖 TalentScout - Hiring Assistant Chatbot")
 
 with st.sidebar:
     st.markdown(
@@ -18,13 +18,13 @@ with st.sidebar:
         """,
         unsafe_allow_html=True
     )
-    st.title("TalentScout AI")
+    st.title("TalentScout")
     st.markdown(
-        "**AI Interview Assistant**\n\n"
+        "**Hiring Assistant**\n\n"
         "Your data is anonymized for your privacy.\n"
     )
     st.info(
-        "Your responses are collected solely for the purpose of this AI interview demo. "
+        "Your responses are collected solely for the purpose of this Screening demo. "
         "We do not store personal information and all data is anonymized. "
         "You may stop at any time."
     )
@@ -34,14 +34,14 @@ consent_given = st.sidebar.checkbox(
 )
 
 if not consent_given:
-    st.warning("Please provide consent to continue the interview.")
+    st.warning("Please provide consent to continue the Screening.")
     st.stop()
 
 # Initialize Session State 
 if 'chat_history' not in st.session_state:
     st.session_state.chat_history = [
         {"role": "system", "content": get_gathering_system_prompt()},
-        {"role": "assistant", "content": "**Welcome to TalentScout!**. I'm your AI Hiring Assistant, here to guide you through a quick technical screening.\n\n"
+        {"role": "assistant", "content": "**Welcome to TalentScout!**. I'm your Hiring Assistant Chatbot, here to guide you through a quick technical screening.\n\n"
         "We'll start by collecting a few basic details about you and then ask a few relevant questions "
         "based on your selected tech stack.\n\n" "To get started, what is your full name?"}
     ]
