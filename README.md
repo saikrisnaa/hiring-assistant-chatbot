@@ -1,6 +1,6 @@
 # TalentScout – AI Hiring Assistant
 
-A privacy-focused, intelligent chatbot web application that automates initial candidate screening for technology recruitment. Built with Python (Streamlit) and AI language models for dynamic conversations, secure data handling, and an inviting user experience.
+A privacy-focused, intelligent chatbot web application that automates initial candidate screening for technology recruitment. Built with Python (Streamlit) and AI language models for dynamic conversations, secure data handling, and better user experience.
 
 ## Features
 
@@ -30,4 +30,5 @@ A privacy-focused, intelligent chatbot web application that automates initial ca
 
 - Start the chatbot app using command - streamlit run main.py
 - Access in your browser at localhost
+
 
