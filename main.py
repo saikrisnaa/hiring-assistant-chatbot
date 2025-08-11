@@ -64,7 +64,7 @@ for message in st.session_state.chat_history:
 if not st.session_state.interview_finished:
     user_input = st.chat_input("Your response (or type 'exit' to end)")
     if user_input:
-        # === ADV: Sentiment for every message ===
+        # Sentiment for every message 
         user_sentiment = analyze_sentiment(user_input)
         st.session_state.sentiment_trend.append(user_sentiment)
 
@@ -171,3 +171,4 @@ if st.session_state.interview_finished and st.session_state.candidate_data:
             encrypted_data = f.read()
         decrypted_json = cipher.decrypt(encrypted_data).decode()
         st.json(json.loads(decrypted_json))
+
