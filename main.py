@@ -51,7 +51,7 @@ if 'chat_history' not in st.session_state:
     st.session_state.current_question_index = 0
     st.session_state.gathering_phase = True
     st.session_state.interview_finished = False
-    st.session_state.sentiment_trend = []  # New for advanced features
+    st.session_state.sentiment_trend = []  # advanced features
 
 # To Display Chat History 
 for message in st.session_state.chat_history:
@@ -171,4 +171,5 @@ if st.session_state.interview_finished and st.session_state.candidate_data:
             encrypted_data = f.read()
         decrypted_json = cipher.decrypt(encrypted_data).decode()
         st.json(json.loads(decrypted_json))
+
 
