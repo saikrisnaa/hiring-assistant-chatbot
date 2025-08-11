@@ -37,7 +37,7 @@ if not consent_given:
     st.warning("Please provide consent to continue the Screening.")
     st.stop()
 
-# Initialize Session State 
+# Initialize Session State - to keep track of the user's progress and data during chatbot interaction. Without it, each new input would reset the app.
 if 'chat_history' not in st.session_state:
     st.session_state.chat_history = [
         {"role": "system", "content": get_gathering_system_prompt()},
@@ -171,5 +171,6 @@ if st.session_state.interview_finished and st.session_state.candidate_data:
             encrypted_data = f.read()
         decrypted_json = cipher.decrypt(encrypted_data).decode()
         st.json(json.loads(decrypted_json))
+
 
 
