@@ -7,4 +7,5 @@ load_dotenv()
 openai.api_key = os.getenv("GROQ_API_KEY")
 openai.api_base = "https://api.groq.com/openai/v1"
 
-LLM_MODEL = "llama3-8b-8192"
+LLM_MODEL = "llama-3.1-8b-instant"
+
